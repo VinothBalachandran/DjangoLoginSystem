@@ -1,6 +1,6 @@
 # Django Login System
 
-## Installed softaware version
+Installed softaware version
 
 1. Python 3.9.0
 2. pip 20.2.3
