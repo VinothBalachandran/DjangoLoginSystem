@@ -1,0 +1,16 @@
+{% extends 'accounts/index.html' %}
+{% load bootstrap4 %}
+    {% block body %}
+    
+        <div class="alert alert-dark mt-3" role="alert">
+            <center><h2>Register Here!</h2></center>
+        </div>
+       
+            {{ form.errors }}
+            <form method="POST">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                <button type="submit" class="btn btn-primary">Create User</button>
+            </form>
+    
+    {% endblock  %}
